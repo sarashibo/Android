@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MissionViewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ef5350"
+                android:id="@+id/content">
+
+                <TextView
+                    android:id="@+id/text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="タイトル：えきすぱんどView"/>
+
+                <TextView
+                    android:id="@+id/expandable_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="aaaaaa"
+                    android:layout_below="@+id/text_view"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="動かないよー"
+                android:id="@+id/button"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:id="@+id/BDailyMission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily任務" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/Bd1content">
+                <Button
+                    android:id="@+id/Bd1"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:text="D敵艦隊を撃破せよ！ " />
+                <TextView
+                    android:id="@+id/Bd1expandable_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="aaaaaa"
+                    android:layout_below="@+id/Bd1"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="17dp"
+                android:layout_height="29dp"
+                app:srcCompat="@drawable/arrow_lightblue" />
+
+            <Button
+                android:id="@+id/Bd2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="D敵艦隊主力を撃滅せよ！" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="26dp"
+                android:layout_height="29dp"
+                app:srcCompat="@drawable/arrow_lightblue" />
+
+            <Button
+                android:id="@+id/Bd3"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="D敵艦隊を10回邀撃せよ！ " />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
